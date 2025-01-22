@@ -1,0 +1,76 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 108px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    user-select: none;
+    + .wrapper {
+        margin-left: 12px;
+    }
+
+    // Disable
+    &.disable {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+// icon
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+// rounded
+.rounded {
+    min-width: 102px;
+    padding: 9px 8px;
+    border-color: rgba(22, 24, 35, 0.12);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    border-radius: 100px;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 12px;
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+// button types
+.primary {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+
+    &:hover {
+        background-color: var(--primary-color-hover);
+        transition: 0.3s;
+        border-color: var(--primary-color-hover);
+    }
+}
+
+// Button đen trắng
+.shape_neutral {
+    background-color: var(--shape-neutral-color);
+    box-shadow: none;
+
+    &:hover {
+        background-color: var(--shape-neutral-color-hover);
+    }
+}
+
+// button sizes
+.large {
+    min-width: 200px;
+}
