@@ -50,7 +50,7 @@ function Header() {
     const [searchResult, setSearchResult] = useState([]);
     useEffect(() => {
         setTimeout(() => {
-            setSearchResult([]);
+            setSearchResult([]); //API
         }, 0);
     }, []);
     return (
