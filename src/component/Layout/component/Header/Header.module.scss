@@ -30,6 +30,7 @@
     &__input {
         padding: 10px 0;
         flex: 1;
+        font-size: 1.6rem;
         margin-right: 33px;
         caret-color: red;
     }
@@ -84,6 +85,7 @@
 
 .actions {
     display: flex;
+    align-items: center;
 }
 
 // three dots
@@ -92,5 +94,24 @@
     background-color: transparent;
     margin-left: 12px;
     padding-left: 12px;
+    cursor: pointer;
+}
+
+// upload
+.action-btn {
+    display: inline-flex;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+.login-btn {
+    width: 20px;
+    height: 20px;
+}
+.user-avatar {
+    margin-left: 16px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
     cursor: pointer;
 }

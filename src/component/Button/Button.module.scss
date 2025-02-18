@@ -1,7 +1,7 @@
 .wrapper {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     font-size: 1.6rem;
     font-weight: 700;
     min-width: 108px;
@@ -50,6 +50,7 @@
 
 // button types
 .primary {
+    justify-content: center;
     color: var(--white);
     background-color: var(--primary-color);
     border-color: var(--primary-color);

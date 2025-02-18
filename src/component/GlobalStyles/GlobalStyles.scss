@@ -40,8 +40,28 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: 1.6rem;
     line-height: 1.5;
     color: var(--black);
+}
+
+// Custom Tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
 }
