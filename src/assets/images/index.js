@@ -13,6 +13,7 @@ const images = {
     live: require('~/assets/images/live.svg').default,
     discover: require('~/assets/images/discover.svg').default,
     logout: require('~/assets/images/logout.svg').default,
+    noImage: require('~/assets/images/no-image.png'),
 };
 
 export default images;

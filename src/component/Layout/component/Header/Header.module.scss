@@ -13,76 +13,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.search,
-.search__result {
-    width: 300px;
-}
 
-.search {
-    position: relative;
-    padding-left: 16px;
-    background: #1618230f;
-    border-radius: 92px;
-    display: flex;
-    justify-content: space-between;
-    border: solid 1px transparent;
-
-    &__input {
-        padding: 10px 0;
-        flex: 1;
-        font-size: 1.6rem;
-        margin-right: 33px;
-        caret-color: red;
-    }
-
-    &__input:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.75);
-    }
-
-    &-btn {
-        position: relative;
-        padding: 10px 16px;
-        border-top-right-radius: 100px;
-        border-bottom-right-radius: 100px;
-        color: rgb(167, 167, 171);
-        cursor: pointer;
-    }
-    &-btn:hover {
-        background-color: #e1e1e1;
-    }
-    &-btn::after {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        height: 22px;
-        width: 1px;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgb(167 167 171);
-    }
-
-    .clear,
-    .loading {
-        position: absolute;
-        color: rgb(167 167 171);
-        right: 55px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
-.search:focus-within {
-    border: solid 1px #ccc;
-}
-
-.search__title {
-    padding: 5px 12px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
-}
-
+// actions
 .actions {
     display: flex;
     align-items: center;
@@ -99,6 +31,8 @@
 
 // upload
 .action-btn {
+    position: relative;
+    display: flex;
     display: inline-flex;
     padding: 4px 10px;
     cursor: pointer;
@@ -114,4 +48,19 @@
     object-fit: cover;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    padding: 0px 5px;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'TiktokDisplayFont', sans-serif;
+    background-color: var(--primary-color);
 }
